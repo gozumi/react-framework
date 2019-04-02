@@ -1,0 +1,20 @@
+# dependencies
+node_modules/
+
+# build
+dist/
+
+# generated reports & docs
+docs/
+reports/
+
+# SonarQube analysis files
+.scannerwork/
+.sonar/
+
+# system files
+.DS_Store
+Thumbs.db
+
+# error logs
+yarn-error.log

@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": "./src",
+    "outDir": "./dist",
+    "sourceMap": true,
+    "module": "es6",
+    "moduleResolution": "node",
+    "target": "es5",
+    "jsx": "react"
+  },
+  "include": [
+    "./src/client",
+    "./src/common",
+    "./src/_typings"
+  ]
+}

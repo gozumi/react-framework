@@ -1,0 +1,144 @@
+{
+  "name": "swift robin",
+  "description": "The hairdresser booking app",
+  "short_name": "sr",
+  "start_url": "/app/index.html",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#000000",
+  "theme_color": "#f2b900",
+  "scope": "./",
+  "lang": "English",
+  "icons": [
+    {
+      "src": "./images/icons/16x16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "./images/icons/32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "./images/icons/48x48.png",
+      "sizes": "48x48",
+      "type": "image/png"
+    },
+    {
+      "src": "./images/icons/72x72.png",
+      "sizes": "72x72",
+      "type": "image/png"
+    },
+    {
+      "src": "./images/icons/76x76.png",
+      "sizes": "76x76",
+      "type": "image/png"
+    },
+    {
+      "src": "./images/icons/96x96.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "./images/icons/120x120.png",
+      "sizes": "120x120",
+      "type": "image/png"
+    },
+    {
+      "src": "./images/icons/128x128.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "./images/icons/144x144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "./images/icons/152x152.png",
+      "sizes": "152x152",
+      "type": "image/png"
+    },
+    {
+      "src": "./images/icons/180x180.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "./images/icons/192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "./images/icons/256x256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "./images/icons/512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "./images/icons/640x960.png",
+      "sizes": "640x960",
+      "type": "image/png"
+    },
+    {
+      "src": "./images/icons/640x1136.png",
+      "sizes": "640x1136",
+      "type": "image/png"
+    },
+    {
+      "src": "./images/icons/740x1334.png",
+      "sizes": "740x1334",
+      "type": "image/png"
+    },
+    {
+      "src": "./images/icons/768x1024.png",
+      "sizes": "768x1024",
+      "type": "image/png"
+    },
+    {
+      "src": "./images/icons/750x1334.png",
+      "sizes": "750x1334",
+      "type": "image/png"
+    },
+    {
+      "src": "./images/icons/1024x768.png",
+      "sizes": "1024x768",
+      "type": "image/png"
+    },
+    {
+      "src": "./images/icons/1024x1024.png",
+      "sizes": "1024x1024",
+      "type": "image/png"
+    },
+    {
+      "src": "./images/icons/1242x2208.png",
+      "sizes": "1242x2208",
+      "type": "image/png"
+    },
+    {
+      "src": "./images/icons/1334x750.png",
+      "sizes": "1334x750",
+      "type": "image/png"
+    },
+    {
+      "src": "./images/icons/1536x2048.png",
+      "sizes": "1536x2048",
+      "type": "image/png"
+    },
+    {
+      "src": "./images/icons/2048x1536.png",
+      "sizes": "2048x1536",
+      "type": "image/png"
+    },
+    {
+      "src": "./images/icons/2208x1242.png",
+      "sizes": "2208x1242",
+      "type": "image/png"
+    }
+  ]
+}

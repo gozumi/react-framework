@@ -1,0 +1,17 @@
+html {
+  --base-color: #000000;
+  --transparent-base-color: rgba(0, 0, 0, .9) ;
+  --base-font-color: #aaaaaa;
+  --highlight-font-color: #f2b900;
+  --alternative-font-color: #9b5e18;
+  --bright-font-color: #ffffff;
+  --muted-font-color: #777777;
+  --base-font-size: 10px;
+  --small-font-size: 7px;
+  --light-color: #d6d6d6;
+  --light-border: 1px solid var(--light-color);
+  --section-border: 1px solid rgba(205, 204, 204, .3);
+  --accent-color: #f2b900;
+  --muted-color: #777777;
+  --highlight-color: #945104;
+}

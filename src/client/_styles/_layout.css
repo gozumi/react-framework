@@ -1,0 +1,36 @@
+.layout__main {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  min-height: 100%;
+}
+
+.layout__feature {
+  min-height: 50vh;
+  height: calc(100% - 8rem);
+}
+
+.layout__aside {
+  grid-area: side-bar;
+  margin: 2rem 0 0 0;
+  padding: 0 2rem;
+  opacity: .8;
+}
+
+.layout__aside:hover {
+  opacity: 1;
+} 
+
+.layout__footer {
+  grid-area: footer;
+  border-top: var(--section-border);
+  min-height: 20rem; 
+  padding: 2rem 0;
+  opacity: .8;
+  margin: 2rem 2rem 0 2rem;
+}
+
+.layout__footer:hover {
+  opacity: 1;
+}

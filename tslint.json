@@ -1,0 +1,23 @@
+{
+    "defaultSeverity": "error",
+    "extends": [
+        "tslint:latest",
+        "tslint-react",
+        "tslint-config-standard",
+        "tslint-immutable",
+        "tslint-sonarts"
+    ],
+    "rules": {
+        "no-implicit-dependencies": [
+            true,
+            "dev",
+            [
+                "client",
+                "common",
+                "server",
+                "worker-loader!web-workers"
+            ]
+        ],
+        "no-submodule-imports": false
+    }
+}
