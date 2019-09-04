@@ -1,0 +1,148 @@
+{
+  // Place your snippets for typescriptreact here. Each snippet is defined under a snippet name and has a prefix, body and 
+  // description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+  // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+  // same ids are connected.
+  // Example:
+  // "Print to console": {
+  // 	"prefix": "log",
+  // 	"body": [
+  // 		"console.log('$1');",
+  // 		"$2"
+  // 	],
+  // 	"description": "Log output to console"
+  // }
+  "React - create stateless component": {
+    "prefix": "rc",
+    "body": [
+      "import './styles.css'",
+      "",
+      "import { concatIfDefined } from 'client/app/_utilities'",
+      "import * as React from 'react'",
+      "",
+      "interface IProps {",
+      "\tclassName?: string",
+      "}",
+      "",
+      "export default function ${1:Component} (props: IProps) {",
+      "\tconst { className } = props",
+      "",
+      "\treturn (",
+      "\t\t<${2:element} className={concatIfDefined(['${3:className}', className])}>",
+      "\t\t\t${4:content}",
+      "\t\t</${2:element}>",
+      "\t)",
+      "}"
+    ],
+    "description": "creates a react stateless component"
+  },
+  "React - create connected component": {
+    "prefix": "rcc",
+    "body": [
+      "import { IState } from 'client/app/state/reducers/_interfaces'",
+      "import ${1:Component} from '${2:Module}'",
+      "import { connect } from 'react-redux'",
+      "import { Dispatch } from 'redux'",
+
+      "",
+      "export default connect(mapStateToProps, mapDispatchToProps)(${1:Component})",
+      "",
+      "interface IProps {",
+      "\tclassName?: string",
+      "}",
+      "",
+      "function mapStateToProps (state: IState, ownProps: IProps) {",
+      "\tconst { ${4:property} } = state.${3:reducer_section}",
+      "\tconst { className } = ownProps",
+      "\treturn {",
+      "\t\tclassName,",
+      "\t\t${4:property}",
+      "\t}",
+      "}",
+      "",
+      "type ApplicableActions =",
+      "\t${5:action}",
+      "",
+      "function mapDispatchToProps (dispatch: Dispatch<ApplicableActions>) {",
+      "\treturn {",
+      "\t\t${6:dispatch_function}: () => dispatch(${7:action_creator})",
+      "\t}",
+      "}"
+    ],
+    "description": "creates a react connected component"
+  },
+  "React - create stateful component": {
+    "prefix": "rsc",
+    "body": [
+      "import './styles.css'",
+      "",
+      "import { concatIfDefined } from 'client/app/_utilities'",
+      "import * as React from 'react'",
+      "",
+      "interface IProps {",
+      "\tclassName?: string",
+      "}",
+      "",
+      "interface IState {",
+      "",
+      "}",
+      "",
+      "export default class ${1:Component} extends React.Component<IProps, IState> {",
+      "\tconstructor (props: IProps) {",
+      "\t\tsuper(props)",
+      "\t}",
+      "",
+      "\tpublic render () {",
+      "\t\tconst { className } = this.props",
+      "",
+      "\t\treturn (",
+      "\t\t\t<${2:element} className={concatIfDefined(['${3:className}', className])}>",
+      "\t\t\t\t${4:content}",
+      "\t\t\t</${2:element}>",
+      "\t\t)",
+      "\t}",
+      "}"
+    ],
+    "description": "creates a react stateful component"
+  },
+  "React Redux connector": {
+    "prefix": "react-connect",
+    "body": [
+      "import { ${1:IState} } from 'client/app/state/reducers/_interfaces'",
+      "import { ${2:IAction} } from 'client/app/state/store/_interfaces'",
+      "import { connect } from 'react-redux'",
+      "import { Dispatch } from 'redux'",
+      "",
+      "import ${3:Component} from './${4:component}'",
+      "",
+      "export default connect(mapStateToProps)(${3:Component})",
+      "",
+      "function mapStateToProps (state: ${1:IState}) {",
+      "",
+      "}",
+      "",
+      "function mapDispatchToProps (dispatch: Dispatch<${2:IAction}>) {",
+      "",
+      "}"
+    ],
+    "description": "creates a redux reducer"
+  },
+  "Redux - create reducer": {
+    "prefix": "reducer",
+    "body": [
+      "export default function ${1:reduxReducer} (",
+      "\tcurrentState: ${2:IState} = DEFAULT_STATE,",
+      "\taction: ${3:IAction}",
+      ") {",
+      "\tconst { payload, type } = action",
+      "\tconst reducerMap: any = {",
+      "\t\t[${ACTION}]: () => ${4:reducerFunction}(currentState, payload)",
+      "\t}",
+      "",
+      "\tconst reducer = reducerMap[type]",
+      "\treturn reducer ? reducer() : currentState",
+      "}"
+    ],
+    "description": "creates a redux reducer"
+  }
+}
